@@ -14,7 +14,7 @@
 <% end %>
 
 <%= erp_datalist(
-    url: erp_purchase.list_backend_orders_path,
+    url: erp_purchase.backend_purchase_orders_listing_path,
     keywords: [
         {
             text: t('.order_code'), name: 'erp_orders_orders.code'
@@ -47,14 +47,16 @@
             divider: true
         },
         {
-            text: '<i class="fa fa-eye-slash"></i> '+t('.archive'),
-            url: '',
-            data_method: 'PUT'
+            text: '<i class="fa fa-check"></i> '+t('.set_confirm'),
+            url: erp_orders.set_confirm_all_backend_orders_path,
+            data_method: 'PUT',
+            data_confirm: t('.set_confirm_confirm')
         },
         {
-            text: '<i class="fa fa-eye"></i> '+t('.unarchive'),
-            url: '',
-            data_method: 'PUT'
+            text: '<i class="fa fa-ban"></i> '+t('.set_cancel'),
+            url: erp_orders.set_cancel_all_backend_orders_path,
+            data_method: 'PUT',
+            data_confirm: t('.set_cancel_confirm')
         },
         {
             divider: true
