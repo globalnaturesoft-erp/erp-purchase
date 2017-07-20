@@ -65,3 +65,7 @@ vi:
             delete: "Xóa đơn hàng"
             delete_confirm: "Bạn chắc chắn muốn xóa đơn hàng này?"
             payment_record: "Phiếu thanh toán"
+            set_confirm: "Xác nhận đơn hàng"
+            set_cancel: "Hủy đơn hàng"
+            set_confirm_confirm: "Bạn đồng ý xác nhận đơn hàng?"
+            set_cancel_confirm: "Bạn đồng ý hủy đơn hàng?"
