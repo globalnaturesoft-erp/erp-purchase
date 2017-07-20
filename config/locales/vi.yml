@@ -3,14 +3,16 @@ vi:
     erp:
       backend:
         sidebar:
-          purchase: "Mua hàng"
-          orders: "Đơn hàng"
+          purchase: "MUA HÀNG"
+          purchase_orders: "Đơn đặt hàng"
+          suppliers: "Nhà cung cấp"
   erp:
     purchase: 
       backend:
         purchases:
           purchase_orders:
-            orders: "Đơn mua hàng"
+            create_purchase_order: "Tạo đơn hàng"
+            orders: "Đơn đặt hàng"
             order_code: "Mã đơn hàng"
             order_date: "Ngày đặt hàng"
             supplier: "Nhà cung cấp"
