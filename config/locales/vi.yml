@@ -12,7 +12,7 @@ vi:
         purchases:
           purchase_orders:
             create_purchase_order: "Tạo đơn hàng"
-            orders: "Đơn đặt hàng"
+            orders: "Đơn nhập hàng"
             order_code: "Mã đơn hàng"
             order_date: "Ngày đặt hàng"
             supplier: "Nhà cung cấp"
