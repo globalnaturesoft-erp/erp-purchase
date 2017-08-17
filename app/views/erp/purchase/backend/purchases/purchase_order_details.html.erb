@@ -2,7 +2,7 @@
     <thead class="flip-content">
         <tr>
             <th width="10%" class="text-left">Mã SP</th>
-            <th class="numeric">Tên SP</th>
+            <th class="numeric">Đường kính</th>
             <th class="numeric">Loại</th>
             <th class="numeric">Đơn vị tính</th>
             <th class="numeric text-right">Giá bán<sup>(1)</sup></th>
@@ -17,7 +17,7 @@
         <% @order.order_details.each do |order_detail| %>
             <tr>
                 <td class="text-left"><strong><%= order_detail.product_code %></strong></td>
-                <td class="text-left"><%= order_detail.product_name %></td>
+                <td class="text-left"><%= order_detail.product.get_diameter %></td>
                 <td class="text-left"><%= order_detail.product_category_name %></td>
                 <td class="text-left"><%= order_detail.product_unit_name %></td>
                 <td class="numeric text-right"><%= format_price(order_detail.price) %></td>
