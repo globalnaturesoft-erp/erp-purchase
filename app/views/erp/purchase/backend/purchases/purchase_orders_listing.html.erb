@@ -59,7 +59,7 @@
     </thead>
     <tbody>
         <% @orders.each do |order| %>
-            <tr class="odd gradeX has-child-table" data-url="<%= erp_purchase.backend_purchase_order_details_path(id: order.id) %>">
+            <tr class="<%= 'blurred' if order.is_deleted? %> odd gradeX has-child-table" data-url="<%= erp_purchase.backend_purchase_order_details_path(id: order.id) %>">
                 <td>
                     <%= erp_datalist_check_row(id: order.id) %>
                 </td>
