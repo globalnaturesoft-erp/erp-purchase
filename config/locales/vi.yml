@@ -11,7 +11,7 @@ vi:
       backend:
         purchases:
           purchase_orders:
-            create_purchase_order: "Tạo đơn hàng"
+            create_purchase_order: "Thêm đơn nhập hàng"
             orders: "Đơn nhập hàng"
             order_code: "Mã đơn hàng"
             order_date: "Ngày đặt hàng"
@@ -38,10 +38,10 @@ vi:
             set_deleted_confirm: "Bạn đồng ý hủy đơn hàng?"
             delete: "Xóa đơn hàng"
             delete_confirm: "Bạn chắc chắn muốn xóa đơn hàng này?"
-            order_from_date: "Ngày đặt hàng"
-            order_to_date: "Ngày đặt hàng"
-            select_from_date: "Từ ngày..."
-            select_to_date: "Đến ngày..."
+            order_from_date: "Từ ngày"
+            order_to_date: "Đến ngày"
+            select_from_date: "Lọc đặt hàng từ ngày..."
+            select_to_date: "Lọc đặt hàng đến ngày..."
             keywords: "Từ khóa"
             product_code: "Mã SP"
             diameter: "Đường kính"
@@ -49,7 +49,7 @@ vi:
             filter_supplier: "Nhà cung cấp"
             choose_supplier: "Lọc theo nhà cung cấp"
             filter_warehouse: "Kho nhập vào"
-            choose_warehouse: "Lọc theo kho nhập"
+            choose_warehouse: "Lọc theo kho nhập vào"
           purchase_orders_listing:
             order_code: "Mã đơn hàng"
             order_date: "Ngày đặt hàng"
