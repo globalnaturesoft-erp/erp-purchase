@@ -11,8 +11,8 @@ vi:
       backend:
         purchases:
           purchase_orders:
-            create_purchase_order: "Thêm đơn nhập hàng"
-            orders: "Đơn nhập hàng"
+            create_purchase_order: "Thêm đơn mua hàng"
+            orders: "Đơn mua hàng"
             order_code: "Mã đơn hàng"
             order_date: "Ngày đặt hàng"
             supplier: "Nhà cung cấp"
