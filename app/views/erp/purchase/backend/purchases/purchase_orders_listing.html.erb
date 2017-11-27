@@ -14,6 +14,11 @@
                     <%= t('.supplier') %>
                 </th>
             <% end %>
+            <% if get_columns(params).include?("quantity") %>
+                <th>
+                    <%= t('.quantity') %>
+                </th>
+            <% end %>
             <% if get_columns(params).include?("total") %>
                 <th class="sortable" sort-by='erp_orders_orders.cache_total'>
                     <%= t('.total') %>
@@ -72,6 +77,9 @@
                 <% if get_columns(params).include?("supplier") %>
                 <td><%= order.supplier_name %></td>
                 <% end %>
+                <% if get_columns(params).include?("quantity") %>
+                <td><%= order.items_count %></td>
+                <% end %>
                 <% if get_columns(params).include?("total") %>
                 <td><%= format_price(order.cache_total) %></td>
                 <% end %>
@@ -118,5 +126,5 @@
 <% if @orders.empty? %>
     <div class="datalist-empty-line"><%= t('.no_matching_records_found') %></div>
 <% end %>
-    
+
 <%= erp_datalist_pagination(@orders) %>

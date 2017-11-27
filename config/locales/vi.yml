@@ -50,6 +50,7 @@ vi:
             choose_supplier: "Lọc theo nhà cung cấp"
             filter_warehouse: "Kho nhập vào"
             choose_warehouse: "Lọc theo kho nhập vào"
+            quantity: "Số lượng"
           purchase_orders_listing:
             order_code: "Mã đơn hàng"
             order_date: "Ngày đặt hàng"
@@ -70,6 +71,7 @@ vi:
             debt: "Công nợ"
             return_back: "Cần trả lại tiền"
             extend_debt_deadline: "Gia hạn công nợ"
+            quantity: "Số lượng"
             view: "Xem & In"
             edit: "Chỉnh sửa"
             pay_ncc: "Thanh toán NCC"
