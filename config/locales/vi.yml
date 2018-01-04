@@ -89,9 +89,9 @@ vi:
             set_deleted_confirm: "Bạn thực sự muốn hủy đơn hàng?"
             re_opened_confirm: "Đơn hàng đang bị hủy. Bạn muốn xác nhận lại đơn hàng?"
             no_matching_records_found: "Không tìm thấy đơn hàng nào trong danh sách"
-            deliveried: "Hoàn thành"
+            delivered: "Đã giao xong"
             not_delivery: "Chưa giao xong"
-            over_deliveried: "Giao dư"
+            over_delivered: "Giao dư"
           purchase_order_details:
             product_code: "Mã sản phẩm"
             product_name: "Tên sản phẩm"

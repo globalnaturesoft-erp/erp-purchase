@@ -94,13 +94,16 @@
                 <% end %>
                 <% if get_columns(params).include?("status") %>
                 <td>
-                    <%= status_label(order.status) %>
-                    <br>
-                    <%= status_label(order.cache_payment_status) %>
+                    <div>
+                        <%= status_label(order.status) %>
+                    </div>
+                    <div>
+                        <%= status_label(order.cache_payment_status) %>
+                    </div>
                     <% if order.is_confirmed? %>
-                        <div>
-                            <span class="label label-sm label-<%= order.cache_delivery_status %>"><%= t('.'+order.cache_delivery_status) %></span>
-                        </div>
+                    <div>
+                        <%= status_label(order.cache_delivery_status) %>
+                    </div>
                     <% end %>
                 </td>
                 <% end %>
