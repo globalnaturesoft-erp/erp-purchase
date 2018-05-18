@@ -54,6 +54,7 @@ vi:
             not_delivery: "Chưa giao xong"
             delivered: "Đã giao xong"
             over_delivered: "Giao bị dư"
+            note: "Ghi chú"
           purchase_orders_listing:
             order_code: "Mã đơn hàng"
             order_date: "Ngày đặt hàng"
@@ -92,6 +93,7 @@ vi:
             delivered: "Đã giao xong"
             not_delivery: "Chưa giao xong"
             over_delivered: "Giao dư"
+            note: "Ghi chú"
           purchase_order_details:
             product_code: "Mã sản phẩm"
             product_name: "Tên sản phẩm"

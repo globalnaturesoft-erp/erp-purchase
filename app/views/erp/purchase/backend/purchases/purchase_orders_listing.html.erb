@@ -34,6 +34,11 @@
                     <%= t('.order_date') %>
                 </th>
             <% end %>
+            <% if get_columns(params).include?("note") %>
+                <th>
+                    <%= t('.note') %>
+                </th>
+            <% end %>
             <% if get_columns(params).include?("deadline") %>
                 <th>
                     <%= t('.debt_deadline') %>
@@ -88,6 +93,9 @@
                 <% end %>
                 <% if get_columns(params).include?("order_date") %>
                 <td><%= format_date(order.order_date) %></td>
+                <% end %>
+                <% if get_columns(params).include?("note") %>
+                <td><%= order.note %></td>
                 <% end %>
                 <% if get_columns(params).include?("deadline") %>
                 <td><%= format_date(order.get_payment_deadline) %></td>
