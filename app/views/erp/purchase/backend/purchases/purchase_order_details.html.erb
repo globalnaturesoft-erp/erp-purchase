@@ -42,7 +42,7 @@
                             <td class="text-right bg-green"><strong><%= format_price(@order.cache_tax_amount) %></strong></td>
                             <td class="text-right bg-green"><strong><%= format_price(@order.cache_total) %></strong></td>
                         </tr>
-                        <% @order.order_details.includes(:product).order('erp_products_products.ordered_code').each do |order_detail| %>
+                        <% @order.ordered_order_details.each do |order_detail| %>
                             <tr>
                                 <td class="text-left"><strong><%= order_detail.product_name %></strong></td>
                                 <td class="text-left"><%= order_detail.product_unit_name %></td>
@@ -73,7 +73,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <% @order.order_details.includes(:product).order('erp_products_products.ordered_code').each do |order_detail| %>
+                        <% @order.ordered_order_details.each do |order_detail| %>
                             <% if order_detail.delivered_delivery_details.count > 0 %>
                                 <tr class="odd gradeX has-child-table" data-url="<%= erp_qdeliveries.backend_deliveries_purchases_path(id: order_detail.id) %>">
                             <% else %>
