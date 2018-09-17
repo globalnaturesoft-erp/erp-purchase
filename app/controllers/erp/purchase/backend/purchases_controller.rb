@@ -4,10 +4,13 @@ module Erp
       class PurchasesController < Erp::Backend::BackendController
     
         def purchase_orders
+          authorize! :purchase_purchase_orders_index, nil
         end
         
         # POST /orders/list
         def purchase_orders_listing
+          authorize! :purchase_purchase_orders_index, nil
+          
           @orders = Erp::Orders::Order.purchase_orders.search(params).paginate(:page => params[:page], :per_page => 10)
           
           render layout: nil
